@@ -52,6 +52,8 @@ body {
 .buttons button:focus {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -129,7 +131,10 @@ body {
   color: #2196f3;
 }
 .section-1 {
-  background-color: #2f303a;
+  /* background-color: url(../images/Tlo1-index-section1.jpg)
+    ; */
+  background-image: url(../images/Tlo2-index-section1.jpg);
+  fill: rgb(47, 48, 58, 0.4);
   color: #ffffff;
   text-align: center;
   max-width: 1600px;
@@ -137,6 +142,7 @@ body {
   padding: 0 15px;
   margin-bottom: 94px;
 }
+
 .section-1 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -197,13 +203,14 @@ body {
 .section-2 > h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }
 .section-3 {
   background-color: #f5f4fa;
-  height: 648px;
+  max-width: 1600px;
+  height: 708px;
 }
 .section-3 > h2 {
   font-weight: 700;
@@ -215,7 +222,7 @@ body {
 }
 .section-3 ul {
   display: flex;
-  padding-left: 0;
+  padding-left: 215px;
 }
 .section-3 li {
   width: 270px;
@@ -246,18 +253,55 @@ body {
   color: #757575;
   padding-bottom: 30px;
 }
+
+.section-4 {
+  text-align: center;
+}
+
+.section-4 h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+.section-4 svg {
+  border-radius: 4px;
+  color: #afb1b8;
+}
+.section-4 ul {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 94px;
+}
+.section-4 li:not(:last-child) {
+  margin-right: 30px;
+}
+.section-4 .client-icon {
+  text-decoration: none;
+  border-style: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.client-icon:hover svg,
+.client-icon:focus svg {
+  fill: red;
+}
+
+.section-4 li svg:hover {
+  fill: red;
+}
+
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* max-width: 1200px; */
-  /* align-items: center;
-  justify-content: center;
-  
-} */
-  /* .list-portfolio li {
-  flex-basis: calc((100% - 30px) / 3);
- */
+}
+.list-portfolio li:hover,
+.list-portfolio li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-portfolio figure {
   background: #ffffff;
@@ -286,3 +330,7 @@ body {
   list-style-type: none;
   padding-left: 0;
 }
+/* path {
+  width: 40px;
+  height: 52px;
+} */
