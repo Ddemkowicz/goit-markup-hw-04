@@ -19,7 +19,7 @@ body {
   color: #212121;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 .container {
@@ -27,11 +27,18 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.head-content {
+  display: flex;
+  width: 1200px;
+}
+
 .style-head {
   display: flex;
-  width: 1600px;
-  padding-left: 215px;
+  /* width: 1600px; */
+  /* padding-left: 215px; */
   border-bottom: 1px solid #ececec;
+  justify-content: center;
 }
 .style-head .address {
   display: flex;
@@ -135,7 +142,8 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 1600px;
+  width: 100%;
+
   text-align: left;
   padding: 60px 215px;
 }
