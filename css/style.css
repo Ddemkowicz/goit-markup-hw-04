@@ -23,12 +23,12 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.head-content {
+.h-f-content {
   display: flex;
   width: 1200px;
 }
